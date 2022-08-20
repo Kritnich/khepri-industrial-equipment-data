@@ -649,5 +649,138 @@
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_nelson.png",
     "license_id": "mf_nelson"
+  },
+  {
+    "id": "kie_black_carpet",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "BLACK CARPET",
+    "variant": "MOURNING CLOAK",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 62,
+    "description": "<p>This variant of the Mourning Cloak can be taken at rank II of the MOURNING CLOAK license instead of the base Frame, or gained as exotic gear through play.</p><p>Thanks to a massive bounty paid to first generation Rubblefolk lancers, a deal was struck with high level SSC manufacturers which, in exchange for exotic underground materials, were glad to add KIE-OWD to their licensed, 3rd-party designers. The pristine frames sent to Rubble as reference models ended up scrapped or covered with sandstorm dust; their flexible platings, cloaking devices and fine blades finding use with the more reserved members of the colony.</p><p>The Black Carpet is merely a name given to the groups that make scouting efforts of the massive tunnel systems, fending off invasive megafauna with concealed skirmishes that might last days at a time, as they take out the pack leaders before picking off each individual until none are left and the tunnels are secure again.</p>",
+    "mounts": [
+      "Flex",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 7,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Ambush Hunter",
+        "description": "<p>The Black Carpet gains +1 Accuracy on melee attacks if the target has no adjacent characters other than the Black Carpet.</p><p>1/round, on a melee critical hit while Hidden, the Black Carpet does not lose Hidden and may move up to its speed while ignoring reactions and engagement.</p>",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "The Black Carpet gains +1 Accuracy on melee attacks if the target has no adjacent characters other than the Black Carpet."
+          },
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, on a melee critical hit while Hidden, the Black Carpet does not lose Hidden and may move up to its speed while ignoring reactions and engagement."
+          }
+        ]
+      },
+      {
+        "name": "Meld with the Shadows",
+        "description": "While Invisible or Hidden, the Black Carpet can move through terrain and spaces occupied by other characters, ignoring reactions and engagement. If it ends movement on a space occupied by another character or terrain piece, it is pushed to the nearest unoccupied space."
+      }
+    ],
+    "core_system": {
+      "name": "Phantasm Cloak",
+      "description": "Core System Fluff",
+      "active_name": "Ethereal Meld",
+      "active_effect": "<p>The Black Carpet redirects all power towards a blinkspace engine, entering an ethereal state that makes it seem as a sentient shadow with no origin.</p><p>While in this state, you gain the following benefits: <ul><li>You become Invisible</li><li>Damage dealt by your next melee attack cannot be reduced in any way and it deals +1d6 bonus damage on a critical hit.</li><li>Characters beyond range 5 cannot draw line of sight to the Black Carpet, their sensors simply showing emptiness where you stand.</li></ul></p><p>This state ends when you hit a character with an attack or force them to make a save.</p><p>This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.</p>",
+      "use": "Encounter",
+      "activation": "Quick",
+      "passive_name": "Horrifying Apparition",
+      "passive_effect": "1/round, when the Black Carpet loses Invisible or Hidden, it can force an adjacent character to make a System save or become Jammed until the end of their next turn. A character can only become Jammed by this effect 1/scene."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_mourning_cloak.png"
+  },
+  {
+    "id": "kia_cicada",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "CICADA",
+    "variant": "BALOR",
+    "mechtype": [
+      "Controller"
+    ],
+    "y_pos": 27,
+    "description": "<p>This variant of the Balor can be taken at rank II of the BALOR license instead of the base Frame, or gained as exotic gear through play.</p><p>Named after the notoriously noiseful beetle species from Cradle, the Cicada was originally developed by a sect of Rubbleborn that decided to worship the Maker. Locating a cave of “time crystals”, they attempted to figure out how to travel back in time to prevent the destruction of their “deity”.</p><p>Constantly surrounded by rogue nanites, the Cicadas are a constant pain in the back of the more pacific colonies like Rubble, and although direct conflict in these zones are rare, their pillaging attacks against Weevil harvests are always a looming threat that forces such groups to keep their guard up at all times.</p>",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Drone Replicator",
+        "description": "1/scene, when the Cicada deploys a drone, it can deploy an additional copy of the drone without expending additional charges or actions.",
+        "use": "Scene"
+      },
+      {
+        "name": "Shapeless",
+        "description": "Critical hits scored against the Cicada become normal hits, and all ranged and melee attacks made against the Cicada suffer 1 Difficulty. This trait ceases to function if the Cicada is Jammed."
+      }
+    ],
+    "core_system": {
+      "name": "Sandstorm-class Nanites",
+      "description": "Core System Fluff",
+      "active_name": "Warsong of the Hive",
+      "active_effect": "For the rest of the scene, all allied characters gain the Warrior’s Chant and Shapeless traits as long as they stay within the Cicada’s Hivemind Range.",
+      "activation": "Protocol",
+      "passive_name": "Warrior's Chant",
+      "passive_effect": "Hostile characters that start their turn adjacent to the Cicada must succeed on a System save or take 3 Heat."
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_balor.png",
+    "license_id": "mf_balor"
   }
 ]
