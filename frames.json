@@ -419,7 +419,21 @@
         "bonuses": [],
         "counters": [],
         "deployables": [],
-        "synergies": [],
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Launcher",
+              "Cannon"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "The Metriini’s Launcher and Cannon weapons gain +1 Accuracy on attacks against flying characters."
+          }
+        ],
         "integrated": [],
         "special_equipment": []
       },
@@ -431,7 +445,21 @@
         "bonuses": [],
         "counters": [],
         "deployables": [],
-        "synergies": [],
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Launcher",
+              "Cannon"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "When the Metriini clears all Heat, its next Launcher or Cannon attack deals +1d6 bonus Burn on a critical hit. This effect does not stack."
+          }
+        ],
         "integrated": [],
         "special_equipment": []
       }
