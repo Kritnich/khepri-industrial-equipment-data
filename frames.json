@@ -553,5 +553,101 @@
       "activation": "Protocol"
     },
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_genghis.png"
+  },
+  {
+    "id": "mf_pillbug",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "PILLBUG",
+    "variant": "NELSON",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "y_pos": 35,
+    "description": "<p>This variant of the Nelson can be taken at rank II of the NELSON license instead of the base Frame, or gained as exotic gear through play.</p><p>The KIE-OWD Pillbug originally started life as an up-armored Nelson variant, replacing the armor plating with a malleable deterrence field, a thought experiment by Rubbleborn engineers to find novel methods in combating pirate boarding parties. Originally just theoretical, an intercepted shipment from a nearby mining colony would see the Rubbleborn there utilize the Pillbug in combat, where it proved to be a promising design.</p><p>Following negotiations with the mining colony, the newly-founded Off-World Division (OWD) of KIE decided to start collaborating with other manufacturers. In a show of good faith, the Pillbug’s schematics were sent to IPS-N proper. Following collaborative refinements, including an outside-of-the-box repurposing of the Nelson’s null-k plating and perpetual motion drive to be focused on what was around the mech, rather than what was inside of it.</p>",
+    "mounts": [
+      "Flex",
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 6,
+      "sensor_range": 8,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Unstoppable Force",
+        "description": "<p>The Pillbug can Roll Up as a quick action, gaining OVERSHIELD equal to 2 + GRIT. While rolled up, it cannot make ranged or tech attacks but its base speed increases to 6. It may end this effect as a Protocol.</p><p>If the Pillbug loses this OVERSHIELD, it automatically unrolls.</p>",
+        "actions": [
+          {
+            "name": "Roll Up",
+            "activation": "Quick",
+            "detail": "Gain OVERSHIELD equal to 2 + GRIT. While rolled up, it cannot make ranged or tech attacks but its base speed increases to 6. It may end this effect as a Protocol.",
+            "confirm": ["RETRACTING EXTERNAL SYSTEMS. ENABLING GYROSTATIC HARNESS. ROCK AND ROLL, PILOT."]
+          }
+        ]
+      },
+      {
+        "name": "Discharged Impact",
+        "description": "When the Pillbug scores a melee critical hit while Rolled Up, it may discharge all stored energy as a Free Action. The triggering attack deals bonus Explosive Damage equal to the Pillbug's current OVERSHIELD and it must succeed on a Hull save or be knocked back 3 spaces and PRONE.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "When the Pillbug scores a melee critical hit while Rolled Up, it may discharge all stored energy as a Free Action. The triggering attack deals bonus Explosive Damage equal to the Pillbug's current OVERSHIELD and it must succeed on a Hull save or be knocked back 3 spaces and PRONE."
+          }
+        ]
+      },
+      {
+        "name": "Crushing Roll",
+        "description": "<p>The Pillbug can move through spaces occupied by PRONE hostile characters. When it does so, it can force that character to make a Hull save, taking 1d6 kinetic damage and becoming IMMOBILIZED until the end of their next turn on a failed save.</p><p>A character can be forced to make this save only once per round.</p>",
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "<p>The Pillbug can move through spaces occupied by PRONE hostile characters. When it does so, it can force that character to make a Hull save, taking 1d6 kinetic damage and becoming IMMOBILIZED until the end of their next turn on a failed save.</p><p>A character can be forced to make this save only once per round.</p>"
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Null-K Redirection Engine",
+      "description": "Core System Fluff",
+      "active_name": "Pinball Protocol",
+      "active_effect": "As a Protocol, the Pillbug’s Null-K Redirection Engine’s limiters are removed. For the rest of the scene:<ul><li>The damage from Roly Poly increases to 3 AP Kinetic Damage.</li><li>The self-inflicted Damage from Roly Poly is removed.</li><li>The Pillbug does not need to successfully ram a character in order to activate Roly-Poly.</li><li>The OVERSHIELD gained from Unstoppable Force is increased to 4 + GRIT, and Base Speed while Rolled Up increases to 8.</li><li>All Hull Saves forced by the Pillbug have +1 DIFF</li></ul>",
+      "activation": "Protocol",
+      "passive_name": "Roly-Poly",
+      "passive_effect": "Gain the Roly-Poly Free Action.",
+      "passive_actions": [
+        {
+          "name": "Roly-Poly",
+          "activation": "Free",
+          "detail": "<p>While Rolled Up, successfully ramming a character or object also pushes the Pillbug in a direction of its choice up to its Speed. Both the Pillbug and the character or object take 1 AP Kinetic Damage.</p><p>If the Pillbug lands adjacent to an obstacle or character, it may Ram them as a free Action, repeating the same process.</p><p>It can do this multiple times a turn, but only once for each unique object or character.</p>"
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_nelson.png",
+    "license_id": "mf_nelson"
   }
 ]
