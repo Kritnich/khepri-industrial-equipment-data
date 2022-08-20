@@ -498,5 +498,60 @@
     },
     "image_url": "",
     "y_pos": "50"
+  },
+  {
+    "id": "kie_bombardier",
+    "license_level": 2,
+    "source": "HA",
+    "name": "BOMBARDIER",
+    "variant": "GENGHIS",
+    "mechtype": [
+      "Controller/Artillery"
+    ],
+    "y_pos": 17,
+    "description": "<p>This variant of the Genghis can be taken at rank II of the GENGHIS license instead of the base Frame, or gained as exotic gear through play.</p><p>Utilizing and repurposing Harrison Armory technologies is familiar ground for the Rubbleborn. Following contact with the outside world and the enhancement of their already-established industrial base, the Rubbleborn decided to use existing frames as testbeds. The Bombardier came out of this program as a specialized mining tool, using corrosive acids to break apart rocks where other machines could more easily clear a path. It proved to be so effective that it soon became standard-issue for all mining operations run by the Rubbleborn, and several have made their way into the hands of the Jovo Extraction Conglomerate as a gesture of goodwill.</p>",
+    "mounts": [
+      "Flex",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 10,
+      "repcap": 3,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 2,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Corrosive Spray",
+        "description": "<p>1/round, when the Bombardier makes a blast, burst, cone or line attack, it can spray acid on a free space within the affected area, which becomes difficult terrain and deals 2 Burn to a character that starts their turn there or moves into the area for the first time in a round.</p><p>This spray lasts until the end of its next turn. For each critical hit it scores on such attacks, it can place an additional zone of acid.</p>"
+      },
+      {
+        "name": "Munitions Launcher",
+        "description": "<p>When the Bombardier makes a blast, cone or line attack, that attack gains +3 Range (even if it does not have Range) and the Arcing Tag.</p><p>Cone and Line attacks may be made in a different direction instead of straight from the Bombardier, as long as it falls within the Range of the Munitions Launcher. If it does so, the weapon(s) involved become treated as if they had the Ordnance tag.</p>"
+      },
+      {
+        "name": "Hard Launch System",
+        "description": "When the Bombardier makes a blast, cone or line attack, it may take 2 Heat to create a backblast in the opposite direction of the attack.  This is a Cone 3 radius, and deals 3 Damage of the triggering attack's type on a success."
+      }
+    ],
+    "core_system": {
+      "name": "System Name",
+      "description": "Core System Fluff",
+      "active_name": "Master of Erosion",
+      "active_effect": "<p>The Bombardier’s launcher systems are enhanced, and the safety limiters removed temporarily.</p><p>For the rest of the scene:</p><ul><li>Acid zone placed by Corrosive Spray last until the end of the scene</li><li>Munition Launcher's Range is increased to 5.</li><li>Hard Launch System deals 1d6+2 damage instead of 3, and may create a Cone 5 pattern instead of Cone 3.</li><li>The Bombardier and allied characters become immune to the acid created by Corrosive Spray, along with difficult terrain and dangerous terrain.</li></ul>",
+      "activation": "Protocol"
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_genghis.png"
   }
 ]
