@@ -1,15 +1,13 @@
 ---
-name: "pre-release"
+name: "tagged-release"
 
 on:
   push:
-    branches:
-      - "master"
-    tags-ignore:
+    tags:
       - "v*"
 
 jobs:
-  gh_pre_release:
+  gh_tagged_release:
     runs-on: "ubuntu-latest"
     env:
       JEST_VERBOSE: ${{ secrets.JEST_VERBOSE }}
@@ -21,14 +19,13 @@ jobs:
           lfs: true
           fetch-depth: 0
 
-      - run: "zip khepri-industrial-equipment-${{ github.run_id }}.lcp *.json"
+      - run: "zip khepri-industrial-equipment-${{ github.ref_name }}.lcp *.json"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
+          prerelease: false
+          title: "Release Build"
           files: |
-            khepri-industrial-equipment-${{ github.run_id }}.lcp
+            khepri-industrial-equipment-${{ github.ref_name }}.lcp
         id: "automatic_releases"
