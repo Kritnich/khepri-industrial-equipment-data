@@ -28,7 +28,7 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: true
-          title: "Development Build"
+          title: "Pre-Release ${{ github.run_id }}"
           files: |
             khepri-industrial-equipment-${{ github.run_id }}.lcp
         id: "automatic_releases"
