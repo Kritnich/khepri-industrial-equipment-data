@@ -27,5 +27,5 @@ jobs:
           prerelease: false
           title: "Release ${{ github.ref_name }}"
           files: |
-            khepri-industrial-equipment-${{ github.ref_name }}.lcp
+            *.lcp
         id: "automatic_releases"
